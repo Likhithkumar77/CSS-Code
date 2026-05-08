@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px 10px;
+            color: white;
+        }
+        .nav-links{
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links a:hover{
+            color: yellow;
+        }
+        .card-container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .card button {
+      background: teal;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="Logo">MyLogo</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="card-container">
+  <div class="card">
+    <h3>Product 1</h3>
+    <p>₹500</p>
+    <button>Buy</button>
+  </div>
+  <div class="card">
+    <h3>Product 2</h3>
+    <p>₹700</p>
+    <button>Buy</button>
+  </div>
+  <div class="card">
+    <h3>Product 3</h3>
+    <p>₹900</p>
+    <button>Buy</button>
+  </div>
+</div>
+</body>
+</html>

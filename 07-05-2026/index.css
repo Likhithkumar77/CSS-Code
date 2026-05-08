@@ -1,0 +1,54 @@
+.title1{
+    border: 20px;
+    text-align: center;
+}
+
+.subtitle{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-style: oblique;
+    text-shadow: 2px;
+}
+
+.para{
+    text-align: center;
+    color: white;
+}
+
+.loc{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+body{
+    background: url(https://www.kodnest.com/wp-content/uploads/2024/12/image__1733191061919-2048x1143.jpg);
+    background-size: 900px;
+    color: white;
+}
+
+.box{
+    border-style: solid;
+    border-color: wheat;
+    width: 400px;
+    padding: 2px;
+    text-align: center;
+}
+
+
+h4{
+    color: aliceblue;
+    left: 20px;
+    position: absolute;
+    bottom: 2px;
+}
+
+a.link{
+    color: darkred;
+}
+
+a.visited{
+    color: blueviolet;
+}
+

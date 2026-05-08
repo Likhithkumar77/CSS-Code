@@ -1,0 +1,21 @@
+*{
+    padding: 20px;
+    background: 10px;
+    background-color: rgb(140, 67, 67);
+    
+}
+
+
+h2{
+    color: aqua;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+}
+
+p1{
+    color: blue;
+    border-radius: 200px;
+    text-align: center;
+    border: 10px;
+}

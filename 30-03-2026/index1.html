@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete CSS Practice</title>
+
+<style>
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+/* ========== NAVBAR (FLEXBOX) ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+/* ========== HEADER ========== */
+.header {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+/* ========== BUTTON + TRANSITION ========== */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: #ff7a18;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+  transform: scale(1.1);
+}
+
+/* ========== CARD (BOX MODEL + SHADOW) ========== */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== GRID LAYOUT ========== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+/* ========== IMAGE STYLING ========== */
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ========== ANIMATION ========== */
+@keyframes slide {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate {
+  animation: slide 1s ease-in-out;
+}
+
+/* ========== FORM STYLING ========== */
+form {
+  margin: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+/* ========== PSEUDO CLASSES ========== */
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media(max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ========== POSITIONING ========== */
+.fixed-box {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+/* ========== HOVER EFFECT ========== */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div>Logo</div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header animate">
+  <h1>CSS Practice Page</h1>
+  <p>Learn all CSS concepts in one file</p>
+  <button class="btn">Click Me</button>
+</div>
+
+<!-- GRID CARDS -->
+<div class="grid">
+  <div class="card">
+    <img src="https://picsum.photos/200" alt="">
+    <h3>Card 1</h3>
+    <p>This is a sample card.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/201" alt="">
+    <h3>Card 2</h3>
+    <p>This is a sample card.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/202" alt="">
+    <h3>Card 3</h3>
+    <p>This is a sample card.</p>
+  </div>
+</div>
+
+<!-- FORM -->
+<form class="card">
+  <h2>Contact Form</h2>
+  <input type="text" placeholder="Enter your name">
+  <input type="email" placeholder="Enter your email">
+  <textarea placeholder="Your message"></textarea>
+  <button class="btn">Submit</button>
+</form>
+
+<!-- FIXED ELEMENT -->
+<div class="fixed-box">
+  Help
+</div>
+
+</body>
+</html>
